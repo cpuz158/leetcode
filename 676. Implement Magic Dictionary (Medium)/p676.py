@@ -29,7 +29,7 @@ class MagicDictionary(object):
                     if mismatch > 1:
                         break
             if mismatch == 1:
-            	return True
+                return True
         return False
                 
         
