@@ -5,8 +5,8 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-		subtract = {}
-		for i in range(len(nums)):
-			if nums[i] in subtract:
-				return [i, subtract[nums[i]]]
-			subtract[target - nums[i]] = i
+        subtract = {}
+        for i in range(len(nums)):
+            if nums[i] in subtract:
+                return [i, subtract[nums[i]]]
+            subtract[target - nums[i]] = i
