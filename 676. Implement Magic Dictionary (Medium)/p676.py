@@ -4,22 +4,13 @@ class MagicDictionary(object):
         """
         Initialize your data structure here.
         """
-        self.arr = []
         
 
-    def buildDict(self, dictionary):
-        """
-        :type dictionary: List[str]
-        :rtype: None
-        """
+    def buildDict(self, dictionary: List[str]) -> None:
         self.arr += dictionary
         
 
-    def search(self, searchWord):
-        """
-        :type searchWord: str
-        :rtype: bool
-        """
+    def search(self, searchWord: str) -> bool:
         arr = [x for x in self.arr if len(x) == len(searchWord)]
         for w in arr:
             mismatch = 0
@@ -31,7 +22,7 @@ class MagicDictionary(object):
             if mismatch == 1:
                 return True
         return False
-                
+
         
 
 
